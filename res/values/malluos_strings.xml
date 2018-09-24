@@ -16,6 +16,21 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- MalluOS -->
     <string name="malluos_settings_title">MalluOS Settings</string>
     <string name="malluos_dashboard_summary">Made In Kerala</string>
+
+    <!-- Categories -->
+    <string name="button_title">Buttons</string>
+    <string name="gestures_title">Gestures</string>
+    <string name="lockscreen_title">Lock Screen</string>
+    <string name="misc_title">Miscellaneous</string>
+    <string name="navbar_title">Navigation Bar</string>
+    <string name="powermenu_title">Power Menu</string>
+    <string name="quicksettings_title">Quick Settings</string>
+    <string name="recents_title">Recents Apps</string>
+    <string name="statusbar_title">Status Bar</string>
+    <string name="notifications_title">Notifications</string>
+
 </resources>
