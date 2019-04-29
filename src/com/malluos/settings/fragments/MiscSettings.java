@@ -40,12 +40,24 @@ import com.malluos.settings.R;
 public class MiscSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String DISPLAY_CUTOUT = "display_cutout_force_fullscreen_settings";
+
+    private Preference mDisplayCutout;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.malluos_settings_misc);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
+        final Resources res = getResources();
+
+        final boolean hasNotch = res.getBoolean(
+                org.lineageos.platform.internal.R.bool.config_haveNotch);
+
+        mDisplayCutout = (Preference) prefScreen.findPreference(DISPLAY_CUTOUT);
+        if (!hasNotch)
+            prefScreen.removePreference(mDisplayCutout);
     }
 
     @Override
