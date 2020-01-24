@@ -20,6 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
         <com.malluos.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_bottom_brightness"
+            android:title="@string/qs_brightness_position_bottom_title"
+            android:summary="@string/qs_brightness_position_bottom_summary"
+            android:defaultValue="false" />
+
+        <com.malluos.settings.preferences.SystemSettingSwitchPreference
             android:key="brightness_slider_qs_unexpanded"
             android:title="@string/brightness_slider_qs_unexpanded"
             android:summary="@string/brightness_slider_qs_unexpanded_summary"
