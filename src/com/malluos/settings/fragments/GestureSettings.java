@@ -20,14 +20,13 @@ import android.content.Context;
 import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v14.preference.SwitchPreference;
-import android.support.v7.preference.ListPreference;
-import android.support.v7.preference.Preference;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.PreferenceCategory;
-import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import androidx.preference.SwitchPreference;
+import androidx.preference.ListPreference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.Preference.OnPreferenceChangeListener;
 import android.provider.Settings;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,13 +36,13 @@ import com.android.internal.logging.nano.MetricsProto;
 
 import com.malluos.settings.R;
 
-public class RecentsSettings extends SettingsPreferenceFragment implements
+public class GestureSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.malluos_settings_recents);
+        addPreferencesFromResource(R.xml.malluos_settings_gestures);
         ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
     }

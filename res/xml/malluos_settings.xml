@@ -20,6 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/malluos_settings_title" >
 
+    <PreferenceCategory
+            android:key="about rom"
+            android:title="About ROM" >
+
         <!-- Status Bar -->
         <com.malluos.settings.preferences.CardviewPreference
             android:key="statusbar_category"
@@ -33,20 +37,13 @@
             android:title="@string/quicksettings_title"
             android:fragment="com.malluos.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
-
-        <!-- Buttons -->
+			
+        <!-- Gestures -->
         <com.malluos.settings.preferences.CardviewPreference
-            android:key="buttonsettings_category"
-            android:title="@string/button_title"
-            android:fragment="com.malluos.settings.fragments.ButtonSettings"
-            android:icon="@drawable/ic_settings_buttons"/>
-
-        <!-- Navigation Bar -->
-        <com.malluos.settings.preferences.CardviewPreference
-            android:key="navigationbar_category"
-            android:title="@string/navbar_title"
-            android:fragment="com.malluos.settings.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
+            android:key="gestures_category"
+            android:title="@string/gestures_title"
+            android:fragment="com.malluos.settings.fragments.GestureSettings"
+            android:icon="@drawable/ic_settings_gestures"/>
 
         <!-- Lock Screen -->
         <com.malluos.settings.preferences.CardviewPreference
@@ -62,13 +59,6 @@
             android:fragment="com.malluos.settings.fragments.PowermenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
 
-        <!-- Recents -->
-        <com.malluos.settings.preferences.CardviewPreference
-            android:key="recents_category"
-            android:title="@string/recents_title"
-            android:fragment="com.malluos.settings.fragments.RecentsSettings"
-            android:icon="@drawable/ic_settings_recents"/>
-
         <!-- Notifications -->
         <com.malluos.settings.preferences.CardviewPreference
             android:key="notifications_category"
@@ -83,4 +73,5 @@
             android:fragment="com.malluos.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
 
+    </PreferenceCategory>
 </PreferenceScreen>
