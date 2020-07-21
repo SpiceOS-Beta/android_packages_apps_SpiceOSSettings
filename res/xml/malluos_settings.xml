@@ -22,7 +22,7 @@
 
     <PreferenceCategory
             android:key="about rom"
-            android:title="About ROM" >
+            android:title="Thegga Kolagal" >
 
         <!-- Status Bar -->
         <com.malluos.settings.preferences.CardviewPreference
