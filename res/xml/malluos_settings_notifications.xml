@@ -19,4 +19,10 @@
     android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <com.malluos.settings.preferences.SystemSettingSwitchPreference
+        android:key="charging_animation"
+        android:title="@string/charging_animation_title"
+        android:summary="@string/charging_animation_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
