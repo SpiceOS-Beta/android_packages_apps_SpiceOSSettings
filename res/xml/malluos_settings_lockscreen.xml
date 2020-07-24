@@ -29,4 +29,11 @@
         android:summary="%s"
         android:defaultValue="1"/>
 
+    <!-- Lockscreen Charging Info -->
+    <com.malluos.settings.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_battery_info"
+        android:title="@string/lockscreen_battery_info_title"
+        android:summary="@string/lockscreen_battery_info_summary"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
