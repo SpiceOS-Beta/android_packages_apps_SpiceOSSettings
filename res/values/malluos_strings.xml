@@ -106,4 +106,12 @@
     <string name="hwkeys_disabled_title">Disable HW keys</string>
     <string name="hwkeys_disabled_summary">Enabling this will disable hardware keys for navigation</string>
 
+    <!-- Adaptive Playback -->
+    <string name="adaptive_playback_title">Adaptive playback</string>
+    <string name="adaptive_playback_summary">Pause media when volume is muted and resume it by increasing volume within the timeout</string>
+    <string name="adaptive_playback_timeout_title">Playback timeout</string>
+
+    <!-- Units -->
+    <string name="unit_seconds">seconds</string>
+
 </resources>
