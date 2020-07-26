@@ -124,4 +124,14 @@
     <string name="advanced_reboot_title">Advanced restart</string>
     <string name="advanced_reboot_summary">When unlocked, include options in the power menu for restarting into recovery or bootloader</string>
 
+   <!--VoLTE Icon Switch-->
+    <string name="volte_icon_title">VoLTE icon</string>
+    <string name="status_bar_volte_disabled">Disabled</string>
+    <string name="status_bar_volte_style_1">Bliss Style</string>
+    <string name="status_bar_volte_style_2">Sony</string>
+    <string name="status_bar_volte_style_3">Pill shape</string>
+    <string name="status_bar_volte_style_4">Square 2 tone</string>
+    <string name="status_bar_volte_style_5">Oneplus</string>
+    <string name="status_bar_volte_style_6">Notch friendly</string>
+
 </resources>
