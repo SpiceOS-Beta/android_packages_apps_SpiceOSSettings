@@ -52,4 +52,11 @@
         settings:units="@string/unit_seconds"
         android:dependency="adaptive_playback_enabled" />
 
+    <Preference
+        android:key="pulse_settings"
+        android:icon="@drawable/ic_pulse"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary"
+        android:fragment="com.malluos.settings.fragments.misc.PulseSettings" />
+
 </PreferenceScreen>
