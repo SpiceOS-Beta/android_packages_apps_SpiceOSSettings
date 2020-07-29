@@ -15,10 +15,11 @@
  * limitations under the License.
  */
 
-package net.margaritov.preference.colorpicker;
+package com.malluos.settings.preferences.colorpicker;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -29,7 +30,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
-import com.android.settings.R;
+import com.malluos.settings.R;
 
 public class ColorPickerDialog extends AlertDialog implements ColorPickerView.OnColorChangedListener, View.OnClickListener {
 
@@ -38,15 +39,21 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
     private ColorPickerPanelView mNewColor;
     private EditText mHex;
 
+    private ColorPickerPanelView mWhite;
+    private ColorPickerPanelView mBlack;
+    private ColorPickerPanelView mCyan;
+    private ColorPickerPanelView mRed;
+    private ColorPickerPanelView mGreen;
+    private ColorPickerPanelView mYellow;
+
     private OnColorChangedListener mListener;
 
     public interface OnColorChangedListener {
-        void onColorChanged(int color);
+        public void onColorChanged(int color);
     }
 
-    ColorPickerDialog(Context context, int initialColor) {
+    public ColorPickerDialog(Context context, int initialColor) {
         super(context);
-
         init(initialColor);
     }
 
@@ -64,11 +71,18 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
                 Context.LAYOUT_INFLATER_SERVICE);
 
         assert inflater != null;
-        View layout = inflater.inflate(R.layout.dui_dialog_color_picker, null);
+        View layout = inflater.inflate(R.layout.dialog_color_picker, null);
 
         mColorPicker = layout.findViewById(R.id.color_picker_view);
         mOldColor = layout.findViewById(R.id.old_color_panel);
         mNewColor = layout.findViewById(R.id.new_color_panel);
+
+        mWhite = layout.findViewById(R.id.white_panel);
+        mBlack = layout.findViewById(R.id.black_panel);
+        mCyan = layout.findViewById(R.id.cyan_panel);
+        mRed = layout.findViewById(R.id.red_panel);
+        mGreen = layout.findViewById(R.id.green_panel);
+        mYellow = layout.findViewById(R.id.yellow_panel);
 
         mHex = layout.findViewById(R.id.hex);
         ImageButton mSetButton = layout.findViewById(R.id.enter);
@@ -82,6 +96,13 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
         mOldColor.setColor(color);
         mColorPicker.setColor(color, true);
 
+        setColorAndClickAction(mWhite, Color.WHITE);
+        setColorAndClickAction(mBlack, Color.BLACK);
+        setColorAndClickAction(mCyan, 0xff24b7d6);
+        setColorAndClickAction(mRed, 0xfff90028);
+        setColorAndClickAction(mGreen, 0xff76c124);
+        setColorAndClickAction(mYellow, 0xffffc90f);
+
         if (mHex != null) {
             mHex.setText(ColorPickerPreference.convertToARGB(color));
         }
@@ -91,7 +112,7 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
                 try {
                     int newColor = ColorPickerPreference.convertToColorInt(text);
                     mColorPicker.setColor(newColor, true);
-                } catch (Exception ignored) {
+                } catch (Exception e) {
                 }
             });
         }
@@ -107,12 +128,24 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
             if (mHex != null) {
                 mHex.setText(ColorPickerPreference.convertToARGB(color));
             }
-        } catch (Exception ignored) {
+        } catch (Exception e) {
         }
     }
 
-    void setAlphaSliderVisible(boolean visible) {
+    public void setAlphaSliderVisible(boolean visible) {
         mColorPicker.setAlphaSliderVisible(visible);
+    }
+
+    public void setColorAndClickAction(ColorPickerPanelView previewRect, final int color) {
+        if (previewRect != null) {
+            previewRect.setColor(color);
+            previewRect.setOnClickListener(v -> {
+                try {
+                    mColorPicker.setColor(color, true);
+                } catch (Exception e) {
+                }
+            });
+        }
     }
 
     /**
@@ -120,7 +153,7 @@ public class ColorPickerDialog extends AlertDialog implements ColorPickerView.On
      *
      * @param listener
      */
-    void setOnColorChangedListener(OnColorChangedListener listener) {
+    public void setOnColorChangedListener(OnColorChangedListener listener) {
         mListener = listener;
     }
 

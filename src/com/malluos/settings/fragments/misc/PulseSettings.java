@@ -35,7 +35,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.malluos.settings.R;
-import net.margaritov.preference.colorpicker.ColorPickerPreference;
+import com.malluos.settings.preferences.colorpicker.ColorPickerPreference;
 
 public class PulseSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {

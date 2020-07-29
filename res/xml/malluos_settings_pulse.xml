@@ -44,7 +44,7 @@
         android:defaultValue="2"
         android:dependency="navbar_pulse_enabled" />
 
-    <net.margaritov.preferences.colorpicker.ColorPickerPreference
+    <com.malluos.settings.preferences.colorpicker.SecureSettingColorPickerPreference
         android:key="pulse_color_user"
         android:title="@string/pulse_color_user_title"
         android:defaultValue="0x92FFFFFF"
