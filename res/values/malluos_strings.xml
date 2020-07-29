@@ -190,4 +190,10 @@
     <string name="qs_tile_title_visibility_title">Tile title</string>
     <string name="qs_tile_title_visibility_summary">Display title below each tile</string>
 
+    <!-- Quick settings tiles -->
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+
 </resources>
