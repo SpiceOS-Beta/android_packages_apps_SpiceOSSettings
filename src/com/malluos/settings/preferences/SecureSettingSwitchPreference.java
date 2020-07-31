@@ -1,11 +1,11 @@
 /*
- * Copyright (C) 2014 The CyanogenMod project
+ * Copyright (C) 2016-2018 crDroid Android Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *      http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -13,15 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.malluos.settings.preferences;
 
 import android.content.Context;
 import android.provider.Settings;
-import androidx.preference.SwitchPreference;
+import android.os.UserHandle;
 import android.util.AttributeSet;
 
-public class SecureSettingSwitchPreference extends SwitchPreference {
+import lineageos.preference.SelfRemovingSwitchPreference;
+
+public class SecureSettingSwitchPreference extends SelfRemovingSwitchPreference {
+
     public SecureSettingSwitchPreference(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
     }
@@ -31,34 +33,22 @@ public class SecureSettingSwitchPreference extends SwitchPreference {
     }
 
     public SecureSettingSwitchPreference(Context context) {
-        super(context, null);
+        super(context);
     }
 
     @Override
-    protected boolean persistBoolean(boolean value) {
-        if (shouldPersist()) {
-            if (value == getPersistedBoolean(!value)) {
-                // It's already there, so the same as persisting
-                return true;
-            }
-            Settings.Secure.putInt(getContext().getContentResolver(), getKey(), value ? 1 : 0);
-            return true;
-        }
-        return false;
+    protected boolean isPersisted() {
+        return Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null;
     }
 
     @Override
-    protected boolean getPersistedBoolean(boolean defaultReturnValue) {
-        if (!shouldPersist()) {
-            return defaultReturnValue;
-        }
-        return Settings.Secure.getInt(getContext().getContentResolver(),
-                getKey(), defaultReturnValue ? 1 : 0) != 0;
+    protected void putBoolean(String key, boolean value) {
+        Settings.Secure.putIntForUser(getContext().getContentResolver(), key, value ? 1 : 0, UserHandle.USER_CURRENT);
     }
 
     @Override
-    protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
-        setChecked(Settings.Secure.getString(getContext().getContentResolver(), getKey()) != null ? getPersistedBoolean(isChecked())
-                : (Boolean) defaultValue);
+    protected boolean getBoolean(String key, boolean defaultValue) {
+        return Settings.Secure.getIntForUser(getContext().getContentResolver(),
+                key, defaultValue ? 1 : 0, UserHandle.USER_CURRENT) != 0;
     }
 }

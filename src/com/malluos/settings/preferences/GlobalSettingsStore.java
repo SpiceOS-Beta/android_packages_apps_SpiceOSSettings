@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 AICP
+ * Copyright (C) 2020 MalluOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.malluos.settings.preferences;
 
 import android.content.ContentResolver;
@@ -69,5 +68,4 @@ public class GlobalSettingsStore extends androidx.preference.PreferenceDataStore
     public void putString(String key, String value) {
         Settings.Global.putString(mContentResolver, key, value);
     }
-
 }

@@ -38,7 +38,7 @@
             android:summary="@string/qs_tile_title_visibility_summary"
             android:defaultValue="true" />
             
-        <com.malluos.settings.preferences.CustomSeekBarPreference
+        <com.malluos.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_columns_portrait"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_columns_portrait_title"
@@ -47,7 +47,7 @@
             settings:min="1"
             settings:units="" />
 
-        <com.malluos.settings.preferences.CustomSeekBarPreference
+        <com.malluos.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_rows_portrait"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_rows_portrait_title"
@@ -56,7 +56,7 @@
             settings:min="1"
             settings:units="" />
 
-        <com.malluos.settings.preferences.CustomSeekBarPreference
+        <com.malluos.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_columns_landscape"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_columns_landscape_title"
@@ -65,7 +65,7 @@
             settings:min="1"
             settings:units="" />
 
-        <com.malluos.settings.preferences.CustomSeekBarPreference
+        <com.malluos.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_rows_landscape"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_rows_landscape_title"
