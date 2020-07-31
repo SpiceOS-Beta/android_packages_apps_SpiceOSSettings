@@ -186,4 +186,8 @@
     <string name="pulse_blacklist_add_apps_title">Add app</string>
     <string name="pulse_blacklist_add_apps_summary">Tap here to add, tap on added app to remove it</string>
 
+    <!-- QS Tile title visibility -->
+    <string name="qs_tile_title_visibility_title">Tile title</string>
+    <string name="qs_tile_title_visibility_summary">Display title below each tile</string>
+
 </resources>

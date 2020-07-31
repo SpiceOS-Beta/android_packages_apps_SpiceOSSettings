@@ -31,4 +31,11 @@
             android:summary="@string/brightness_slider_qs_unexpanded_summary"
             android:defaultValue="false" />
 
+        <!-- QS Tile title visibility -->
+        <com.malluos.settings.preferences.SystemSettingSwitchPreference
+            android:key="qs_tile_title_visibility"
+            android:title="@string/qs_tile_title_visibility_title"
+            android:summary="@string/qs_tile_title_visibility_summary"
+            android:defaultValue="true" />
+
 </PreferenceScreen>
