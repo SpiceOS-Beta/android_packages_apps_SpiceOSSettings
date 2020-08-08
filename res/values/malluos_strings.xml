@@ -202,4 +202,13 @@
     <string name="qs_columns_portrait_title">Columns (portrait)</string>
     <string name="qs_columns_landscape_title">Columns (landscape)</string>
 
+    <!-- VoWiFi icon -->
+    <string name="vowifi_icon_style_title">VoWiFi icon style</string>
+    <string name="vowifi_icon_disabled">Disabled</string>
+    <string name="vowifi_icon_default">OSS 10</string>
+    <string name="vowifi_icon_asus">Asus</string>
+    <string name="vowifi_icon_emui">EMUI</string>
+    <string name="vowifi_icon_moto">Motorola</string>
+    <string name="vowifi_icon_oneplus">OOS</string>
+
 </resources>
