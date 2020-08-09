@@ -125,6 +125,7 @@
         <item>@string/vowifi_icon_moto</item>
         <item>@string/vowifi_icon_asus</item>
         <item>@string/vowifi_icon_emui</item>
+        <item>@string/vowifi_icon_karikku</item>
     </string-array>
 
     <string-array name="vowifi_icon_style_values" translatable="false">
@@ -134,6 +135,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
 
 </resources>
