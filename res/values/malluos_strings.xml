@@ -64,6 +64,8 @@
     <string name="device_CPH1859_description">CPH1859\nFahim Ahmad</string>
     <string name="device_violet">Redmi Note 7 Pro</string>
     <string name="device_violet_description">violet\nSuneesh</string>
+    <string name="device_vince">Redmi 5 Plus/Note 5</string>
+    <string name="device_vince_description">vince\nSrinand.E.K.</string>
 
     <!-- Categories -->
     <string name="gestures_title">Gestures</string>
