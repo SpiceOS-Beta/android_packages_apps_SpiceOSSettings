@@ -50,6 +50,7 @@
 
     <!-- Maintainer Info -->
     <string name="maintainers_header">Maintainers</string>
+    <string name="co_maintainers_header">Co-Maintainers</string>
     <string name="maintainers_header_summary">These are the Official Devices Maintainers...</string>
     <string name="device_maintainers"></string>
     <string name="device_beryllium">Poco F1</string>
@@ -60,6 +61,7 @@
     <string name="device_osprey_description">osprey\nalthafvly</string>
     <string name="device_mido">Redmi Note 4</string>
     <string name="device_mido_description">mido\nGHOST</string>
+    <string name="device_mido_co_description">mido\nROHITH R VARMA</string>
     <string name="device_CPH1859">Realme 1</string>
     <string name="device_CPH1859_description">CPH1859\nFahim Ahmad</string>
     <string name="device_violet">Redmi Note 7 Pro</string>

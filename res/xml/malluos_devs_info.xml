@@ -186,4 +186,19 @@
         </Preference>
 
 </PreferenceCategory>
+
+<PreferenceCategory
+            android:key="co_maintainer"
+            android:title="@string/co_maintainers_header" >
+
+        <Preference
+            android:title="@string/device_mido" 
+            android:summary="@string/device_mido_co_description" 
+            android:icon="@drawable/ic_devs_phone"> 
+	<intent 
+            android:action="android.intent.action.VIEW" 
+            android:data="https://t.me/rohithr99" /> 
+        </Preference>
+</PreferenceCategory>
+
 </PreferenceScreen>
