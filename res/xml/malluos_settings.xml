@@ -24,6 +24,19 @@
             android:key="about rom"
             android:title="Thegga Kolagal" >
 
+        <!-- About -->
+        <com.malluos.settings.preferences.CardviewPreference
+            android:key="info_category"
+            android:title="@string/malluos_about_info"
+            android:fragment="com.malluos.settings.fragments.MalluOSDevsInfoFragment"
+            android:icon="@drawable/ic_settings_about"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:key="features"
+            android:title="MalluOS Features" >
+
         <!-- Status Bar -->
         <com.malluos.settings.preferences.CardviewPreference
             android:key="statusbar_category"

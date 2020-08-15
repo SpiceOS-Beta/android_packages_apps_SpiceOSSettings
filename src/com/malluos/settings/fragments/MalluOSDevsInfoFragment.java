@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.custom;
+package com.malluos.settings.fragments;
 
 import android.os.Bundle;
 import com.android.settings.SettingsPreferenceFragment;
@@ -37,5 +37,4 @@ public class MalluOSDevsInfoFragment extends SettingsPreferenceFragment {
     public int getMetricsCategory() {
         return MetricsEvent.MALLUOS_SETTINGS;
     }
-
 }

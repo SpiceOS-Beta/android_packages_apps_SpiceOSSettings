@@ -20,22 +20,152 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="MalluOS">
 		
-	<!-- Header -->
-        <Preference android:key="malluos_logo"
-                    android:enabled="false"
-                    android:layout="@layout/about_malluos_header" />
+<!-- Header -->
+<Preference android:key="malluos_logo"
+              android:enabled="false"
+              android:layout="@layout/malluos_header" />
 
 <PreferenceCategory
               android:key="about"
-              android:title="@string/malluos_about_info" >
+              android:title="@string/malluos_about_info_summary_title" >
 
         <Preference
-               android:summary="@string/malluos_about_info_summary" 
-               android:icon="@drawable/ic_devs_info" >
+              android:summary="@string/malluos_about_info_summary" 
+              android:icon="@drawable/ic_devs_info" >
         <intent
-               android:action="android.intent.action.VIEW"
-               android:data="https://github.com/malluos" />
+              android:action="android.intent.action.VIEW"
+              android:data="https://github.com/malluos" />
         </Preference>
 </PreferenceCategory>
 
+<PreferenceCategory
+            android:key="malluos_dev"
+            android:title="@string/devs_header" >
+
+        <Preference
+            android:key="dev1"
+            android:title="@string/dev_1"
+            android:icon="@drawable/ic_code"
+            android:summary="@string/dev1_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/althafvly" />
+        </Preference>
+
+        <Preference
+            android:key="dev2"
+            android:title="@string/dev_2"
+            android:icon="@drawable/ic_code"
+            android:summary="@string/dev2_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Anush02198" />
+        </Preference>
+
+        <Preference
+            android:key="dev3"
+            android:title="@string/dev_3"
+            android:icon="@drawable/ic_code"
+            android:summary="@string/dev3_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/G_H_O_S_7" />
+        </Preference>
+
+        <Preference
+            android:key="dev4"
+            android:title="@string/dev_4"
+            android:icon="@drawable/ic_code"
+            android:summary="@string/dev4_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/kalmin06" />
+        </Preference>
+
+        <Preference
+            android:key="dev5"
+            android:title="@string/dev_5"
+            android:icon="@drawable/ic_code"
+            android:summary="@string/dev5_description" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/Axewolf21" />
+        </Preference>
+
+</PreferenceCategory>
+
+<PreferenceCategory
+            android:key="honorable_mentions"
+            android:title="@string/mentions_header">
+
+        <Preference
+            android:key="mentions1"
+            android:icon="@drawable/mallu"
+            android:title="@string/mentions1"
+            android:summary="@string/mentions1_description">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/malluoss" />
+        </Preference>
+
+</PreferenceCategory>
+
+<PreferenceCategory
+            android:key="maintainer"
+            android:title="@string/maintainers_header" >
+
+        <Preference
+            android:summary="@string/maintainers_header_summary"
+            android:icon="@drawable/ic_devs_info" >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://www.github.com/MalluOS-Devices" />
+        </Preference>
+
+        <Preference
+            android:title="@string/device_beryllium"
+            android:summary="@string/device_beryllium_description"
+            android:icon="@drawable/ic_devs_phone">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://t.me/althafvly" />
+        </Preference>
+
+        <Preference
+            android:title="@string/device_jasmine_sprout" 
+            android:summary="@string/device_jasmine_sprout_description" 
+            android:icon="@drawable/ic_devs_phone"> 
+	<intent 
+            android:action="android.intent.action.VIEW" 
+            android:data="https://t.me/Anush02198" /> 
+        </Preference>
+
+        <Preference
+            android:title="@string/device_osprey" 
+            android:summary="@string/device_osprey_description" 
+            android:icon="@drawable/ic_devs_phone"> 
+	<intent 
+            android:action="android.intent.action.VIEW" 
+            android:data="https://t.me/althafvly" /> 
+        </Preference>
+
+        <Preference
+            android:title="@string/device_mido" 
+            android:summary="@string/device_mido_description" 
+            android:icon="@drawable/ic_devs_phone"> 
+	<intent 
+            android:action="android.intent.action.VIEW" 
+            android:data="https://t.me/G_H_O_S_7" /> 
+        </Preference>
+
+        <Preference
+            android:title="@string/device_CPH1859" 
+            android:summary="@string/device_CPH1859_description" 
+            android:icon="@drawable/ic_devs_phone"> 
+	<intent 
+            android:action="android.intent.action.VIEW" 
+            android:data="https://t.me/I_am_pronoob" /> 
+        </Preference>
+
+</PreferenceCategory>
 </PreferenceScreen>

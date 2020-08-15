@@ -20,8 +20,8 @@
 
         <ImageView
            android:layout_width="625dp"
-           android:layout_height="100dp"
-           android:src="@drawable/malluos"
+           android:layout_height="200dp"
+           android:src="@drawable/malluos_flav"
            android:scaleType="centerInside"
            android:adjustViewBounds="true" />
 </LinearLayout>

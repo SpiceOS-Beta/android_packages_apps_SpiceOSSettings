@@ -24,6 +24,45 @@
     <string name="malluos_about_info_summary_title">About Community</string>
     <string name="malluos_about_info_summary">LineageOS Based</string>
 
+    <!-- Dev Info -->
+    <string name="devs_header">Developers</string>
+    <string name="dev_1">Mohammed Althaf</string>
+    <string name="dev_1_git">althafvly</string>
+    <string name="dev1_description">Core Developer</string>
+    <string name="dev_2">Anush Madathumkara</string>
+    <string name="dev_2_git">Anush02198</string>
+    <string name="dev2_description">Core Developer</string>
+    <string name="dev_3">Jijin Raj</string>
+    <string name="dev_3_git">G-H-O-5-T</string>
+    <string name="dev3_description">Group Manager</string>
+    <string name="dev_4">Suneesh</string>
+    <string name="dev_4_git">kalmin06</string>
+    <string name="dev4_description">Group Manager</string>
+    <string name="dev_5">Joshua</string>
+    <string name="dev_5_git">axewolf21</string>
+    <string name="dev5_description">Group Manager</string>
+
+    <!-- Mentions -->
+    <string name="mentions_header">Honorable Mentions</string>
+    <string name="mentions1">MalluOS Community</string>
+    <string name="mentions1_git">MalluOS</string>
+    <string name="mentions1_description">Our Strength</string>
+
+    <!-- Maintainer Info -->
+    <string name="maintainers_header">Maintainers</string>
+    <string name="maintainers_header_summary">These are the Official Devices Maintainers...</string>
+    <string name="device_maintainers"></string>
+    <string name="device_beryllium">Poco F1</string>
+    <string name="device_beryllium_description">beryllium\nalthafvly</string>
+    <string name="device_jasmine_sprout">MI A2</string>
+    <string name="device_jasmine_sprout_description">jasmine_sprout\nAnush02198</string>
+    <string name="device_osprey">Moto G 2015</string>
+    <string name="device_osprey_description">osprey\nalthafvly</string>
+    <string name="device_mido">Redmi Note 4</string>
+    <string name="device_mido_description">mido\nGHOST</string>
+    <string name="device_CPH1859">Realme 1</string>
+    <string name="device_CPH1859_description">CPH1859\nFahim Ahmad</string>
+
     <!-- Categories -->
     <string name="gestures_title">Gestures</string>
     <string name="lockscreen_title">Lock Screen</string>
