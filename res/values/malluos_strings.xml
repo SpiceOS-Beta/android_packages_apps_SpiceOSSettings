@@ -67,7 +67,9 @@
     <string name="device_violet">Redmi Note 7 Pro</string>
     <string name="device_violet_description">violet\nSuneesh</string>
     <string name="device_vince">Redmi 5 Plus/Note 5</string>
-    <string name="device_vince_description">vince\nSrinand.E.K.</string>
+    <string name="device_vince_description">vince\nSrinand E.K</string>
+    <string name="device_wayne">Mi 6X</string>
+    <string name="device_wayne_description">wayne\nAnush02198</string>
 
     <!-- Categories -->
     <string name="gestures_title">Gestures</string>
