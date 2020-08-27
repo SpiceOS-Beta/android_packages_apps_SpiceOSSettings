@@ -14,7 +14,6 @@
     See the License for the specific language governing permissions and
     limitations under the License.
 -->
-
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
@@ -37,10 +36,19 @@
             android:key="features"
             android:title="MalluOS Features" >
 
+        <!-- Gaming Mode -->
+        <com.malluos.settings.preferences.CardviewPreference
+            android:key="gaming_mode"
+            android:icon="@drawable/ic_gaming"
+            android:title="@string/gaming_mode_title"
+            android:summary="@string/gaming_mode_summary"
+            android:fragment="com.malluos.settings.fragments.misc.GamingMode"/>
+
         <!-- Status Bar -->
         <com.malluos.settings.preferences.CardviewPreference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
+            android:summary="@string/statusbar_summary"
             android:fragment="com.malluos.settings.fragments.StatusbarSettings"
             android:icon="@drawable/ic_settings_statusbar"/>
 
@@ -48,6 +56,7 @@
         <com.malluos.settings.preferences.CardviewPreference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
+            android:summary="@string/quicksettings_summary"
             android:fragment="com.malluos.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 			
@@ -55,6 +64,7 @@
         <com.malluos.settings.preferences.CardviewPreference
             android:key="gestures_category"
             android:title="@string/gestures_title"
+            android:summary="@string/gestures_summary"
             android:fragment="com.malluos.settings.fragments.GestureSettings"
             android:icon="@drawable/ic_settings_gestures"/>
 
@@ -62,6 +72,7 @@
         <com.malluos.settings.preferences.CardviewPreference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
+            android:summary="@string/lockscreen_summary"
             android:fragment="com.malluos.settings.fragments.LockscreenSettings"
             android:icon="@drawable/ic_settings_lockscreen"/>
 
@@ -69,13 +80,23 @@
         <com.malluos.settings.preferences.CardviewPreference
             android:key="powermenu__category"
             android:title="@string/powermenu_title"
+            android:summary="@string/powermenu_summary"
             android:fragment="com.malluos.settings.fragments.PowermenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
+
+        <!-- Navigation panel -->
+        <com.malluos.settings.preferences.CardviewPreference
+            android:key="navigation_category"
+            android:title="@string/nav_title"
+            android:summary="@string/nav_summary"
+            android:fragment="com.malluos.settings.fragments.NavSettings"
+            android:icon="@drawable/ic_navigation"/>
 
         <!-- Notifications -->
         <com.malluos.settings.preferences.CardviewPreference
             android:key="notifications_category"
             android:title="@string/notifications_title"
+            android:summary="@string/notifications_summary"
             android:fragment="com.malluos.settings.fragments.NotificationSettings"
             android:icon="@drawable/ic_settings_notifications"/>
 
@@ -83,6 +104,7 @@
         <com.malluos.settings.preferences.CardviewPreference
             android:key="misc_category"
             android:title="@string/misc_title"
+            android:summary="@string/misc_summary"
             android:fragment="com.malluos.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
 

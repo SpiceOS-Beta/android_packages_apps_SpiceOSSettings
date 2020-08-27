@@ -19,21 +19,34 @@
     android:title="@string/quicksettings_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceCategory
+            android:key="aboutbright"
+            android:title="Brightness Slider" >
+
         <com.malluos.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_bottom_brightness"
+            android:icon="@drawable/ic_brightness"
             android:title="@string/qs_brightness_position_bottom_title"
             android:summary="@string/qs_brightness_position_bottom_summary"
             android:defaultValue="false" />
 
         <com.malluos.settings.preferences.SystemSettingSwitchPreference
             android:key="brightness_slider_qs_unexpanded"
+            android:icon="@drawable/ic_brightness"
             android:title="@string/brightness_slider_qs_unexpanded"
             android:summary="@string/brightness_slider_qs_unexpanded_summary"
             android:defaultValue="false" />
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:key="aboutqstile"
+            android:title="QS Tile" >
+
         <!-- QS Tile title visibility -->
         <com.malluos.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_title_visibility"
+            android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_tile_title_visibility_title"
             android:summary="@string/qs_tile_title_visibility_summary"
             android:defaultValue="true" />
@@ -76,8 +89,11 @@
 
         <com.malluos.settings.preferences.SystemSettingSwitchPreference
             android:key="bluetooth_qs_show_battery"
+            android:icon="@drawable/ic_battery_bluetooth"
             android:title="@string/bluetooth_battery_title"
             android:summary="@string/bluetooth_battery_summary"
             android:defaultValue="true"/>
+
+    </PreferenceCategory>
 
 </PreferenceScreen>

@@ -19,20 +19,6 @@
     android:title="@string/misc_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- Gaming Mode -->
-    <Preference
-        android:key="gaming_mode"
-        android:icon="@drawable/ic_gaming"
-        android:title="@string/gaming_mode_title"
-        android:summary="@string/gaming_mode_summary"
-        android:fragment="com.malluos.settings.fragments.misc.GamingMode"/>
-
-    <com.malluos.settings.preferences.SecureSettingSwitchPreference
-        android:key="hardware_keys_disable"
-        android:icon="@drawable/ic_buttons"
-        android:title="@string/hwkeys_disabled_title"
-        android:summary="@string/hwkeys_disabled_summary" />
-
     <!-- Adaptive Playback -->
     <com.malluos.settings.preferences.SystemSettingSwitchPreference
         android:key="adaptive_playback_enabled"
@@ -51,13 +37,6 @@
         settings:interval="10"
         settings:units="@string/unit_seconds"
         android:dependency="adaptive_playback_enabled" />
-
-    <Preference
-        android:key="pulse_settings"
-        android:icon="@drawable/ic_pulse"
-        android:title="@string/pulse_settings"
-        android:summary="@string/pulse_settings_summary"
-        android:fragment="com.malluos.settings.fragments.misc.PulseSettings" />
 
     <!-- Display cutout options -->
     <Preference

@@ -73,12 +73,21 @@
 
     <!-- Categories -->
     <string name="gestures_title">Gestures</string>
+    <string name="gestures_summary">Customize gestures</string>
     <string name="lockscreen_title">Lock Screen</string>
+    <string name="lockscreen_summary">Make lockscreen Sessy</string>
     <string name="misc_title">Miscellaneous</string>
+    <string name="misc_summary">Some useless stuff</string>
     <string name="powermenu_title">Power Menu</string>
+    <string name="powermenu_summary">Death sentences</string>
     <string name="quicksettings_title">Quick Settings</string>
+    <string name="quicksettings_summary">Customize QS</string>
+    <string name="nav_title">Navigation Settings</string>
+    <string name="nav_summary">Make navigation look cool</string>
     <string name="statusbar_title">Status Bar</string>
+    <string name="statusbar_summary">Customize statusbar</string>
     <string name="notifications_title">Notifications</string>
+    <string name="notifications_summary">Cool Notification stuff</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>
