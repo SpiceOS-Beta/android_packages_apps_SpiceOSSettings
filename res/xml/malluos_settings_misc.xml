@@ -46,4 +46,10 @@
         android:summary="@string/display_cutout_force_fullscreen_summary"
         android:fragment="com.malluos.settings.fragments.ui.DisplayCutoutForceFullscreenSettings" />
 
+    <Preference
+        android:key="vol_steps"
+        android:title="@string/volume_steps_title"
+        android:summary="@string/volume_steps_summary"
+        android:fragment="com.malluos.settings.fragments.misc.VolumeSteps" />
+
 </PreferenceScreen>
