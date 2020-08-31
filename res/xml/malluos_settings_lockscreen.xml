@@ -38,11 +38,18 @@
         android:summary="@string/lockscreen_battery_info_summary"
         android:defaultValue="true" />
 
-    <lineageos.preference.LineageSystemSettingSwitchPreference      	
+    <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="fod_gesture"
         android:title="@string/fod_gesture_title"
         android:summary="@string/fod_gesture_summary"
         android:defaultValue="false"
         settings:controller="com.android.settings.security.screenlock.ScreenOffFodPreferenceController" />
+
+    <com.malluos.settings.preferences.SystemSettingSwitchPreference
+        android:key="lockscreen_lock_icon"
+        android:icon="@drawable/ic_lock_outline"
+        android:title="@string/lockscreen_lock_icon_title"
+        android:summary="@string/lockscreen_lock_icon_summary"
+        android:defaultValue="true" />
 
 </PreferenceScreen>

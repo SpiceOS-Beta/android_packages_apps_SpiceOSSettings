@@ -311,4 +311,8 @@
    <string name="hide_from_recents_add_app">Add app to Hide list</string>
    <string name="hide_from_recents_picker_title">Automatically hide for these apps</string>
 
+   <!-- QS Lock Icon -->
+   <string name="lockscreen_lock_icon_title">Lock icon</string>
+   <string name="lockscreen_lock_icon_summary">Display lock icon on the lockscreen</string>
+
 </resources>
