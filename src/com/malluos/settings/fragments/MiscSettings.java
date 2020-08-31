@@ -32,6 +32,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.malluos.settings.fragments.misc.GamingMode;
+import com.malluos.settings.fragments.misc.HAFRSettings;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 

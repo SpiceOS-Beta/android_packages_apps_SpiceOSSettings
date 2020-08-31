@@ -52,4 +52,11 @@
         android:summary="@string/volume_steps_summary"
         android:fragment="com.malluos.settings.fragments.misc.VolumeSteps" />
 
+    <!-- HAFR -->
+    <Preference
+        android:icon="@drawable/ic_hafr"
+        android:title="@string/hide_apps_from_recents_title"
+        android:summary="@string/hide_apps_from_recents_summary"
+        android:fragment="com.malluos.settings.fragments.misc.HAFRSettings" />
+
 </PreferenceScreen>
