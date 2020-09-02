@@ -94,6 +94,14 @@
             android:summary="@string/bluetooth_battery_summary"
             android:defaultValue="true"/>
 
+        <!-- Custom header -->
+        <Preference
+            android:key="custom_header"
+            android:icon="@drawable/ic_header"
+            android:fragment="com.malluos.settings.fragments.quicksettings.CustomHeader"
+            android:title="@string/custom_header_title"
+            android:summary="@string/custom_header_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
