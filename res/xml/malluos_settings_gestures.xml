@@ -19,11 +19,4 @@
     android:title="@string/gestures_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.malluos.settings.preferences.SystemSettingSwitchPreference
-        android:key="three_finger_gesture"
-        android:icon="@drawable/ic_settings_gestures"
-        android:title="@string/three_finger_gesture"
-        android:summary="@string/three_finger_gesture_summary"
-        android:defaultValue="false" />
-
 </PreferenceScreen>

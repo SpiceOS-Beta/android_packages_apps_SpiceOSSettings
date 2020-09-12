@@ -60,13 +60,13 @@
             android:fragment="com.malluos.settings.fragments.QuickSettings"
             android:icon="@drawable/ic_settings_quicksettings"/>
 			
-        <!-- Gestures -->
+        <!-- Gestures 
         <com.malluos.settings.preferences.CardviewPreference
             android:key="gestures_category"
             android:title="@string/gestures_title"
             android:summary="@string/gestures_summary"
             android:fragment="com.malluos.settings.fragments.GestureSettings"
-            android:icon="@drawable/ic_settings_gestures"/>
+            android:icon="@drawable/ic_settings_gestures"/>-->
 
         <!-- Lock Screen -->
         <com.malluos.settings.preferences.CardviewPreference
@@ -76,13 +76,13 @@
             android:fragment="com.malluos.settings.fragments.LockscreenSettings"
             android:icon="@drawable/ic_settings_lockscreen"/>
 
-        <!-- Power Menu -->
+        <!-- Power Menu 
         <com.malluos.settings.preferences.CardviewPreference
             android:key="powermenu__category"
             android:title="@string/powermenu_title"
             android:summary="@string/powermenu_summary"
             android:fragment="com.malluos.settings.fragments.PowermenuSettings"
-            android:icon="@drawable/ic_settings_powermenu"/>
+            android:icon="@drawable/ic_settings_powermenu"/>-->
 
         <!-- Navigation panel -->
         <com.malluos.settings.preferences.CardviewPreference
