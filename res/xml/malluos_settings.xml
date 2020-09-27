@@ -32,33 +32,33 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory
+    <!--<PreferenceCategory
             android:key="features"
-            android:title="MalluOS Features" >
+            android:title="MalluOS Features" >-->
 
-        <!-- Gaming Mode -->
+        <!-- Gaming Mode 
         <com.malluos.settings.preferences.CardviewPreference
             android:key="gaming_mode"
             android:icon="@drawable/ic_gaming"
             android:title="@string/gaming_mode_title"
             android:summary="@string/gaming_mode_summary"
-            android:fragment="com.malluos.settings.fragments.misc.GamingMode"/>
+            android:fragment="com.malluos.settings.fragments.misc.GamingMode"/>-->
 
-        <!-- Status Bar -->
+        <!-- Status Bar 
         <com.malluos.settings.preferences.CardviewPreference
             android:key="statusbar_category"
             android:title="@string/statusbar_title"
             android:summary="@string/statusbar_summary"
             android:fragment="com.malluos.settings.fragments.StatusbarSettings"
-            android:icon="@drawable/ic_settings_statusbar"/>
+            android:icon="@drawable/ic_settings_statusbar"/>-->
 
-        <!-- Quick Settings panel -->
+        <!-- Quick Settings panel 
         <com.malluos.settings.preferences.CardviewPreference
             android:key="quicksettings_category"
             android:title="@string/quicksettings_title"
             android:summary="@string/quicksettings_summary"
             android:fragment="com.malluos.settings.fragments.QuickSettings"
-            android:icon="@drawable/ic_settings_quicksettings"/>
+            android:icon="@drawable/ic_settings_quicksettings"/>-->
 			
         <!-- Gestures 
         <com.malluos.settings.preferences.CardviewPreference
@@ -68,13 +68,13 @@
             android:fragment="com.malluos.settings.fragments.GestureSettings"
             android:icon="@drawable/ic_settings_gestures"/>-->
 
-        <!-- Lock Screen -->
+        <!-- Lock Screen 
         <com.malluos.settings.preferences.CardviewPreference
             android:key="lockscreen_category"
             android:title="@string/lockscreen_title"
             android:summary="@string/lockscreen_summary"
             android:fragment="com.malluos.settings.fragments.LockscreenSettings"
-            android:icon="@drawable/ic_settings_lockscreen"/>
+            android:icon="@drawable/ic_settings_lockscreen"/>-->
 
         <!-- Power Menu 
         <com.malluos.settings.preferences.CardviewPreference
@@ -84,23 +84,23 @@
             android:fragment="com.malluos.settings.fragments.PowermenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>-->
 
-        <!-- Navigation panel -->
+        <!-- Navigation panel 
         <com.malluos.settings.preferences.CardviewPreference
             android:key="navigation_category"
             android:title="@string/nav_title"
             android:summary="@string/nav_summary"
             android:fragment="com.malluos.settings.fragments.NavSettings"
-            android:icon="@drawable/ic_navigation"/>
+            android:icon="@drawable/ic_navigation"/>-->
 
-        <!-- Notifications -->
+        <!-- Notifications 
         <com.malluos.settings.preferences.CardviewPreference
             android:key="notifications_category"
             android:title="@string/notifications_title"
             android:summary="@string/notifications_summary"
             android:fragment="com.malluos.settings.fragments.NotificationSettings"
-            android:icon="@drawable/ic_settings_notifications"/>
+            android:icon="@drawable/ic_settings_notifications"/>-->
 
-        <!-- Misc -->
+        <!-- Misc 
         <com.malluos.settings.preferences.CardviewPreference
             android:key="misc_category"
             android:title="@string/misc_title"
@@ -108,5 +108,5 @@
             android:fragment="com.malluos.settings.fragments.MiscSettings"
             android:icon="@drawable/ic_settings_misc"/>
 
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 </PreferenceScreen>

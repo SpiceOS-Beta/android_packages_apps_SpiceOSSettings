@@ -20,10 +20,10 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="MalluOS">
 		
-<!-- Header -->
+<!-- Header 
 <Preference android:key="malluos_logo"
               android:enabled="false"
-              android:layout="@layout/malluos_header" />
+              android:layout="@layout/malluos_header" />-->
 
 <PreferenceCategory
               android:key="about"
@@ -62,7 +62,7 @@
             android:data="https://t.me/Anush02198" />
         </Preference>
 
-        <Preference
+<!--        <Preference
             android:key="dev3"
             android:title="@string/dev_3"
             android:icon="@drawable/ic_code"
@@ -90,7 +90,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:data="https://t.me/Axewolf21" />
-        </Preference>
+        </Preference>-->
 
 </PreferenceCategory>
 
@@ -110,7 +110,7 @@
 
 </PreferenceCategory>
 
-<PreferenceCategory
+<!--<PreferenceCategory
             android:key="maintainer"
             android:title="@string/maintainers_header" >
 
@@ -208,6 +208,6 @@
             android:action="android.intent.action.VIEW" 
             android:data="https://t.me/rohithr99" /> 
         </Preference>
-</PreferenceCategory>
+</PreferenceCategory>-->
 
 </PreferenceScreen>
