@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2020 crDroid Android Project
+     Copyright (C) 2020 The MalluOS Project
      Copyright (C) 2021 SpiceOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,16 +17,26 @@
 -->
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/hide_apps_from_recents_title">
+    android:title="Navigation"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!-- App picker activity for gaming mode -->
     <PreferenceCategory
-        android:title="@string/hide_from_recents_picker_title"
-        android:key="hafr_applications">
-        <Preference
-            android:key="hafr_packages"
-            android:icon="@drawable/ic_menu_add_white"
-            android:title="@string/hide_from_recents_add_app" />
+            android:key="aboutnav"
+            android:title="Navigation" >
+
+    <Preference
+        android:key="pulse_settings"
+        android:icon="@drawable/ic_pulse"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary"
+        android:fragment="com.spiceos.settings.fragments.misc.PulseSettings" />
+
+    <com.spiceos.settings.preferences.SecureSettingSwitchPreference
+        android:key="hardware_keys_disable"
+        android:icon="@drawable/ic_buttons"
+        android:title="@string/hwkeys_disabled_title"
+        android:summary="@string/hwkeys_disabled_summary" />
+
     </PreferenceCategory>
+
 </PreferenceScreen>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2016-2019 crDroid Android Project
+     Copyright (C) 2021 SpiceOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,14 +21,14 @@
     android:title="@string/gaming_mode_title">
 
     <!-- Master switch -->
-    <com.malluos.settings.preferences.SystemSettingSwitchPreference
+    <com.spiceos.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_enabled"
         android:title="@string/gaming_mode_title"
         android:summary="@string/gaming_mode_enabled_summary"
         android:defaultValue="false" />
 
     <!-- Heads up -->
-    <com.malluos.settings.preferences.SystemSettingSwitchPreference
+    <com.spiceos.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_headsup_toggle"
         android:title="@string/gaming_mode_headsup_title"
         android:summary="@string/gaming_mode_headsup_summary"
@@ -35,7 +36,7 @@
         android:defaultValue="true" />
 
     <!-- Hardware keys -->
-    <com.malluos.settings.preferences.SystemSettingSwitchPreference
+    <com.spiceos.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_hw_keys_toggle"
         android:title="@string/gaming_mode_hardware_keys_title"
         android:summary="@string/gaming_mode_hardware_keys_summary"
@@ -43,14 +44,14 @@
         android:defaultValue="false" />
 
     <!-- Manual brightness -->
-    <com.malluos.settings.preferences.SystemSettingSwitchPreference
+    <com.spiceos.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_manual_brightness_toggle"
         android:title="@string/gaming_mode_brightness_title"
         android:summary="@string/gaming_mode_brightness_summary"
         android:dependency="gaming_mode_enabled"
         android:defaultValue="true" />
 
-    <com.malluos.settings.preferences.SystemSettingListPreference
+    <com.spiceos.settings.preferences.SystemSettingListPreference
         android:key="gaming_mode_ringer_mode"
         android:title="@string/gaming_mode_ringer_title"
         android:entries="@array/gaming_mode_ringer_entries"
@@ -59,7 +60,7 @@
         android:dependency="gaming_mode_enabled"
         android:summary="%s" />
 
-    <com.malluos.settings.preferences.SystemSettingListPreference
+    <com.spiceos.settings.preferences.SystemSettingListPreference
         android:key="gaming_mode_notifications"
         android:title="@string/gaming_mode_notifications_title"
         android:entries="@array/gaming_mode_notifications_entries"
@@ -69,7 +70,7 @@
         android:summary="%s" />
 
     <!-- Dynamic gaming mode -->
-    <com.malluos.settings.preferences.SystemSettingSwitchPreference
+    <com.spiceos.settings.preferences.SystemSettingSwitchPreference
         android:key="gaming_mode_dynamic_state"
         android:title="@string/gaming_mode_dynamic_title"
         android:summary="@string/gaming_mode_dynamic_summary"

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2020 MalluOS Android Project
+     Copyright (C) 2021 SpiceOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -19,7 +20,7 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/custom_header_title" >
 
-    <com.malluos.settings.preferences.SystemSettingSwitchPreference
+    <com.spiceos.settings.preferences.SystemSettingSwitchPreference
         android:key="status_bar_custom_header"
         android:title="@string/custom_header_title"
         android:summary="@string/custom_header_summary"
@@ -53,7 +54,7 @@
         android:summary="@string/file_header_select_summary"
         android:dependency="status_bar_custom_header" />
 
-    <com.malluos.settings.preferences.SystemSettingSeekBarPreference
+    <com.spiceos.settings.preferences.SystemSettingSeekBarPreference
         android:key="status_bar_custom_header_shadow"
         android:title="@string/status_bar_custom_header_shadow_title"
         android:summary="@string/status_bar_custom_header_shadow_summary"

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2018-19 The Superior OS Project
+     Copyright (C) 2021 SpiceOS
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/statusbar_title"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+
+       <com.spiceos.settings.preferences.SystemSettingSwitchPreference
+            android:key="show_fourg_icon"
+            android:icon="@drawable/ic_fourg_icon"
+            android:title="@string/show_fourg_icon_title"
+            android:summary="@string/show_fourg_icon_summary"
+            android:defaultValue="false"/>
+
+       <com.spiceos.settings.preferences.SystemSettingListPreference
+            android:key="volte_icon_style"
+            android:icon="@drawable/ic_volte"
+            android:title="@string/volte_icon_title"
+            android:entries="@array/status_bar_volte_entries"
+            android:entryValues="@array/status_bar_volte_values"
+            android:summary="%s"
+            android:defaultValue="0"/>
+
+       <com.spiceos.settings.preferences.SystemSettingListPreference
+            android:key="vowifi_icon_style"
+            android:title="@string/vowifi_icon_style_title"
+            android:entries="@array/vowifi_icon_style_entries"
+            android:icon="@drawable/ic_vowifi"
+            android:entryValues="@array/vowifi_icon_style_values"
+            android:summary="%s"
+            android:defaultValue="0"/>
+
+       <com.spiceos.settings.preferences.SystemSettingSwitchPreference
+            android:key="volte_vowifi_override"
+            android:icon="@drawable/ic_vowifi"
+            android:title="@string/volte_vowifi_override_title"
+            android:summary="@string/volte_vowifi_override_summary"
+            android:defaultValue="false"/>
+
+</PreferenceScreen>
