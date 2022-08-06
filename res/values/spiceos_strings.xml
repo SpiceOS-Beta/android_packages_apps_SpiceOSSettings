@@ -389,4 +389,8 @@
     <string name="status_bar_notif_count_title">Show notifications count</string>
     <string name="status_bar_notif_count_summary">Display the number of pending notifications</string>
 
+    <!-- Volume rocker wake -->
+    <string name="volume_rocker_wake_title">Volume wake</string>
+    <string name="volume_rocker_wake_summary">Wake your device up by pressing the volume keys</string>
+
 </resources>
